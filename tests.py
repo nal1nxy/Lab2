@@ -2,9 +2,9 @@
 Test Sentence methods.
 Initial developers: COMP 801 Instructors
 Created: February 2024
-Developer(s): enter your name
-Conllaborator(s): enter your collaborator(s) name(s)
-Date: enter date when you started working on it
+Developer(s): Nalin
+Conllaborator(s): Nalin
+Date: 9/13/2024
 """
 import pytest
 

@@ -2,9 +2,9 @@
 Practice with modules and explore a Python class.
 Initial developers: COMP 801 instructors
 Created: February 2024
-Developer: enter your name
-Collaborator(s): enter your collaborator(s) names
-Date: enter date when you start working on it
+Developer: Nalin
+Collaborator(s): Nalin
+Date: 9/13/2024
 """
 
 
