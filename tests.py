@@ -23,11 +23,17 @@ def test_only_integers_4_1():
     assert actual == expected
 
 
-def test_only_words_4_1_1():
+def test_only_integers_4_1_1():
     """
     Test sentence that has 4 words, one of which is an integer, and another
     one has digits and other characters.
     """
+    test_sentence = 'happy new 7e@r 2024'
+    s_obj = Sentence(test_sentence)
+    expected = '2024'
+    s_obj.only_integers()
+    actual = s_obj.sentence
+    assert actual == expected
 
 
 def test_filter_words_4_2_2():
