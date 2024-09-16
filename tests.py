@@ -41,6 +41,13 @@ def test_filter_words_4_2_2():
     Test sentence that has 4 words, including 2 words in the word_lst of
     of length 2
     """
+    test_sentence = 'hello im nalin here'
+    s_obj = Sentence(test_sentence)
+    word_lst = ['im', 'here']
+    expected = 'hello nalin'
+    s_obj.filter_words(word_lst)
+    actual = s_obj.sentence
+    assert actual == expected
 
 
 def test_filter_words_4_0_3():
@@ -48,6 +55,13 @@ def test_filter_words_4_0_3():
     Test sentence that has 4 words, none of which is in the word_lst of length
     3
     """
+    test_sentence = 'hello im nalin here'
+    s_obj = Sentence(test_sentence)
+    word_lst = ['ill', 'her', 'tap']
+    expected = 'hello im nalin here'
+    s_obj.filter_words(word_lst)
+    actual = s_obj.sentence
+    assert actual == expected
 
 
 pytest.main()
