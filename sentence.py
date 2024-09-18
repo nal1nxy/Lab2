@@ -8,9 +8,6 @@ Date: 9/13/2024
 """
 
 
-from curses.ascii import isdigit
-
-
 class Sentence:
     """
     Encapsulate sentence transformations.
@@ -56,7 +53,7 @@ class Sentence:
         integers_only = []
         sentence_list = self.sentence.split()
         for word in sentence_list:
-            if isdigit(word):
+            if word.isdigit:
                 integers_only.append(word)
         self.sentence = " ".join(integers_only)
 
