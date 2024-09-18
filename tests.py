@@ -6,7 +6,7 @@ Developer(s): Nalin
 Conllaborator(s): Nalin
 Date: 9/13/2024
 """
-import pytest
+
 
 from sentence import Sentence
 
@@ -15,7 +15,7 @@ def test_only_integers_4_1():
     """
     Test sentence that has 4 words, one of which is an integer.
     """
-    #test_sentence = 'happy new 2024 year'
+    # test_sentence = 'happy new 2024 year'
     s_obj = Sentence('happy new 2024 year')
     expected = '2024'
     s_obj.only_integers()
@@ -62,5 +62,3 @@ def test_filter_words_4_0_3():
     s_obj.filter_words(word_lst)
     actual = s_obj.sentence
     assert actual == expected
-
-
