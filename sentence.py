@@ -53,7 +53,12 @@ class Sentence:
         Hint: Generate a list of words from `self.sentence` using the str
         split() method.
         """
-
+        integers_only = []
+        sentence_list = self.sentence.split()
+        for word in sentence_list:
+            if isdigit(word):
+                integers_only.append(word)
+        self.sentence = " ".join(integers_only)
 
     def filter_words(self, word_lst):
         """
