@@ -53,9 +53,10 @@ class Sentence:
         integers_only = []
         sentence_list = self.sentence.split()
         for word in sentence_list:
-            if word.isdigit:
+            if word.isdigit():
                 integers_only.append(word)
         self.sentence = " ".join(integers_only)
+        print(self.sentence)
 
     def filter_words(self, word_lst):
         """
@@ -74,3 +75,4 @@ class Sentence:
             if word in word_lst:
                 sentence_list.remove(word)
         self.sentence = " ".join(sentence_list)
+        print(self.sentence)
