@@ -15,8 +15,8 @@ def test_only_integers_4_1():
     """
     Test sentence that has 4 words, one of which is an integer.
     """
-    test_sentence = 'happy new 2024 year'
-    s_obj = Sentence(test_sentence)
+    #test_sentence = 'happy new 2024 year'
+    s_obj = Sentence('happy new 2024 year')
     expected = '2024'
     s_obj.only_integers()
     actual = s_obj.sentence
@@ -64,4 +64,3 @@ def test_filter_words_4_0_3():
     assert actual == expected
 
 
-pytest.main()

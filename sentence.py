@@ -8,6 +8,9 @@ Date: 9/13/2024
 """
 
 
+from curses.ascii import isdigit
+
+
 class Sentence:
     """
     Encapsulate sentence transformations.
@@ -51,6 +54,7 @@ class Sentence:
         split() method.
         """
 
+
     def filter_words(self, word_lst):
         """
         Update `self.sentence` such that it does not have the words in
@@ -63,3 +67,4 @@ class Sentence:
         Hint: Generate a list of words from `self.sentence` using the str
         split() method.
         """
+
